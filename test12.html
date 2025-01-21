@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <!-- form tag -->
+    <!-- action ใช้กำหนดการส่งฟอร์มไปที่ไหน -->
+    <!-- method ใช้กำหนดวิธีการส่งฟอร์ม (GET, POST, PUT, DELETE, PATCH, อื่นๆ) -->
+    <!-- enctype ใช้กำหนดรูปแบบการอัปโหลดไฟล์ (application/x-www-form-urlencoded, multipart/form-data, text/plain) -->
+    <form action="" method="post" enctype="multipart/form-data">
+        <div>
+            <label>Text</label>
+            <input type="text" name="username" placeholder="Username">
+        </div>
+        <br>
+        <div>
+            <label>password</label>
+            <input type="password" name="password" placeholder="Password">
+        </div>
+        <br>
+        <div>
+            <label>number</label>
+            <input type="number" name="number" placeholder="number">
+        </div>
+        <br>
+        <div>
+            <label>email</label>
+            <input type="email" name="email" placeholder="Email">
+        </div>
+        <br>
+        <div>
+            <label>ข้อความเยอะๆ</label>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label>เลือก 1 ตัวเลือก</label>
+            <input type="radio" name="gender" id="V1" value="V1">V1
+            <input type="radio" name="gender" id="V2" value="V2">V2
+            <input type="radio" name="gender" id="V3" value="V3">V3
+        </div>
+        <br>
+        <div>
+            <label>เลือก 1 ตัวเลือก</label>
+            <select name="" id="">
+                <option value="V1">V1</option>
+                <option value="V2">V2</option>
+                <option value="V3">V3</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>เลือกได้ตั้งแต่ 0 ตัวเลือกขึ้นไป</label>
+            <input type="checkbox" name="" id="V1" value="V1">V1
+            <input type="checkbox" name="" id="V2" value="V2">V2
+            <input type="checkbox" name="" id="V3" value="V3">V3
+        </div>
+        <br>
+        <div>
+            <label>File</label>
+            <input type="file" name="" id=""
+                accept=".txt,.doc,.docx,.pdf,.jpg,.png,.gif,.jpeg,.mp4,.mp3,.wav,.csv,.pk5">
+            <br><input type="file" name="" id="" accept="image/*">
+            <br><input type="file" name="" id="" accept="audio/*">
+            <br><input type="file" name="" id="" accept="video/*">
+        </div>
+        <br>
+        <div>
+            <label>เลือกวัน</label>
+            <input type="date" name="" id="">
+        </div>
+        <br>
+        <div>
+            <label>เลือกเวลา</label>
+            <input type="time" name="" id="">
+        </div>
+        <br>
+        <div>
+            <label>เลือกวันและเวลา</label>
+            <input type="datetime-local" name="" id="">
+        </div>
+
+        <br>
+        <!-- ปุ่ม -->
+        <br>
+        <input type="submit" value="ตกลง">
+        <input type="reset" value="ยกเลิก">
+        <br>
+        <br>
+        <button>ตกลง</button>
+        <button>ยกเลิก</button>
+        <br>
+        <br>
+        <!-- ซ่อน -->
+        <input type="hidden" name="stu-status" id="" value="1">
+
+    </form>
 </body>
+
 </html>
